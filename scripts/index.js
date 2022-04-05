@@ -147,3 +147,33 @@ $('*').on('click', function (e) {
   console.log(`The Y co-ordinate of event is: ${e.pageY}`);
   e.stopPropagation();
 });
+
+//  ------------------------------------ Animations ------------------------------------- //
+// animate
+$('#tweets > h2').on('click', function () {
+  // can only be used with numeric parameters
+  $(this).animate({ width: '500px' }, 1000, 'linear', function () {
+    console.log('animation complete');
+  });
+
+  $(this).fadeOut(1000).fadeIn();
+  $(this).fadeTo(1000, 0.5).fadeTo(1000, 1);
+});
+
+// hide/show/toggle
+$('#clients > h2').on('click', function () {
+  // can only be used with numeric parameters
+  $(this).hide(1000);
+  $(this).toggle(1000);
+});
+
+// slide
+$('.slide-up').on('click', function () {
+  $('#lead-banner').slideUp(100);
+});
+$('.slide-down').on('click', function () {
+  $('#lead-banner').slideToggle(1000, console.log('sliding complete'));
+});
+
+//  -------------------------------------- Plugins -------------------------------------- //
+$('.rslides').responsiveSlides();

@@ -3,10 +3,18 @@
   <head>
     <title>Green Design</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <!-- jquery -->
     <script
-      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
       crossorigin="anonymous"
+    ></script>
+    <!-- jquery plugin (responsive slides) -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ResponsiveSlides.js/1.55/responsiveslides.min.js"
+      integrity="sha512-xLb7JAM9BNykuzMmlFtHHgQQAwFMiPVf9IhLV6g/IgQInWqxECLrlqBo64ytFPZH7qeZjahD1TOvl/wp8dL6LA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     ></script>
   </head>
 
@@ -42,6 +50,8 @@
     </div>
 
     <div id="main-content">
+      <div class="wrapper-button slide-up">Slide Up</div>
+      <div class="wrapper-button slide-down">Slide Toggle</div>
       <div class="wrapper">
         <section id="points-of-sale">
           <h2>Points of Sale</h2>
@@ -87,11 +97,32 @@
         <section id="clients">
           <h2>What Our Clients Say</h2>
           <img src="images/head.png" alt="quote" />
-          <blockquote>
-            quatis alique mos et aut occae cum, veliquaspit quo quam, si idem
-            reprorisqui doluptatur accum si sunt ut officiisto enecab id et aut
-            es et l
-          </blockquote>
+          <ul class="rslides">
+            <li>
+              <blockquote>
+                Croissant apple pie gingerbread gummi bears jelly-o liquorice.
+                Danish bear claw marshmallow cake gummies. Sweet roll biscuit
+                cheesecake pudding chupa chups cookie.
+              </blockquote>
+            </li>
+            <li>
+              <blockquote>
+                Dragée cotton candy lemon drops tootsie roll tart tiramisu
+                dessert jelly gingerbread. Cake gummi bears chocolate cake cake
+                cake bonbon tiramisu tootsie roll. Caramels lollipop carrot cake
+                muffin carrot cake liquorice.
+              </blockquote>
+            </li>
+            <li>
+              <blockquote>
+                Brownie halvah pie chocolate bar topping sugar plum tiramisu
+                apple pie chocolate bar. Cupcake sesame snaps cheesecake apple
+                pie gummi bears bonbon sesame snaps pudding. Macaroon gummies
+                topping pie cake candy. Gummi bears cookie apple pie caramels
+                bear claw cake ice cream cake.
+              </blockquote>
+            </li>
+          </ul>
         </section>
         <section id="contact">
           <h2>Drop Us A Line</h2>
